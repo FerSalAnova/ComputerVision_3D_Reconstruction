@@ -4,19 +4,6 @@ This repository implements a full **Structure from Motion (SfM)** pipeline from 
 
 ---
 
-## Repository Structure
-
-```text
-sfm-project/
-├── calibration_images/     # Images used for camera calibration (e.g., checkerboard)
-├── dataset_images/         # Main dataset images to reconstruct the 3D scene
-├── colmap_project/         # COLMAP project setup for dense reconstruction & comparison
-├── calibrate.py            # Computes camera intrinsics and undistorts images
-├── reconstruct.py          # Main reconstruction pipeline
-├── utils/                  # Helper functions and modules
-└── README.md               # You are here
----
-
 ## Project Overview
 
 This project demonstrates a **from‑scratch** implementation of several core Structure‑from‑Motion (SfM) techniques:
