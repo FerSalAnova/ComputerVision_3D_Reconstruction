@@ -1,35 +1,35 @@
 # ComputerVision_3D_Reconstruction
+
 This repository implements a full **Structure from Motion (SfM)** pipeline from scratch using Python. It includes camera calibration, image matching, 3D reconstruction, and a comparison with COLMAP results for benchmarking.
 
 ---
 
 ## Repository Structure
 
+```text
 sfm-project/
-├── calibration_images/ # Images used for camera calibration (e.g., checkerboard)
-├── dataset_images/ # Main dataset images to reconstruct the 3D scene
-├── colmap_project/ # COLMAP project setup for dense reconstruction & comparison
-├── calibrate.py # Computes camera intrinsics and undistorts images
-├── reconstruct.py # Main reconstruction pipeline
-├── utils/ # Helper functions and modules
-└── README.md
-
+├── calibration_images/     # Images used for camera calibration (e.g., checkerboard)
+├── dataset_images/         # Main dataset images to reconstruct the 3D scene
+├── colmap_project/         # COLMAP project setup for dense reconstruction & comparison
+├── calibrate.py            # Computes camera intrinsics and undistorts images
+├── reconstruct.py          # Main reconstruction pipeline
+├── utils/                  # Helper functions and modules
+└── README.md               # You are here
 ---
 
 ## Project Overview
 
-This project demonstrates a from-scratch implementation of several core SfM techniques:
+This project demonstrates a **from‑scratch** implementation of several core Structure‑from‑Motion (SfM) techniques:
 
-- **Camera Calibration** using checkerboard patterns
-- **Feature Matching** using SuperGlue
-- **3D Reconstruction** with:
-  - Structure from Disparity (SfD)
-  - Perspective-n-Point (PnP)
-  - Triangulation
-  - Bundle Adjustment
-- **Image Difference Analysis** between reconstruction results
-- **COLMAP** comparison for dense 3D reconstruction
-
+-**Camera Calibration** using checkerboard patterns  
+-**Feature Matching** with SuperGlue (SuperPoint + SuperGlue)  
+- **3‑D Reconstruction** pipeline including:  
+  - Structure from Disparity (SfD)  
+  - Perspective‑n‑Point (PnP)  
+  - Triangulation  
+  - Bundle Adjustment for global refinement  
+- **Image Difference Analysis** to quantify reconstruction quality  
+- **COLMAP Comparison** for dense 3‑D benchmarking
 ---
 
 ## Methodology
@@ -81,9 +81,9 @@ The `colmap_project/` folder contains a setup for using [**COLMAP**](https://col
 
 Below is a sample visual comparison between the original image, the 3D reconstruction from this project, and the reconstruction from COLMAP:
 
-| Original Image | Our SfM Reconstruction | COLMAP Reconstruction |
-|----------------|------------------------|------------------------|
-| ![Original](images/original.jpg) | ![Our SfM](images/ours_reconstruction.png) | ![COLMAP](images/colmap_reconstruction.png) |
+| Original Image | Our SfM Reconstruction | COLMAP Reconstruction | Comparison |
+|----------------|------------------------|------------------------|---------------|
+| ![Original](Dataset/CV_Foto1.jpg) | ![Our SfM](Results/Results) | ![COLMAP](Results/ResultsColmap.png) | ![Compasion](Results/Comparison.png)
 
 ---
 
