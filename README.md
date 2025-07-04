@@ -50,6 +50,7 @@ Run `reconstruct.py` to perform the full Structure from Motion pipeline:
 
 ```bash
 python reconstruct.py
+```
 This script includes the following steps:
 
 Relative Pose Estimation between image pairs
