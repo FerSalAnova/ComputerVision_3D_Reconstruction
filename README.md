@@ -27,6 +27,7 @@ Use `calibrate.py` to compute the camera intrinsic matrix from `calibration_imag
 
 ```bash
 python calibrate.py
+```
 This generates:
 
 intrinsics.npy: Camera intrinsic matrix
