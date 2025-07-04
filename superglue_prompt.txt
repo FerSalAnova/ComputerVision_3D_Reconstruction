@@ -1,0 +1,3 @@
+./your_path_to_SuperGlue/match_pairs.py --resize 752 --superglue outdoor --max_keypoints 2048 --nms_radius 3 --resize_float --input_dir your_path/ --input_pairs your_path/ --viz
+
+
