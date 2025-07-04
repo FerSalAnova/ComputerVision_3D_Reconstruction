@@ -72,7 +72,7 @@ Below is a sample visual comparison between the original image, the 3D reconstru
 
 | Original Image | Our SfM Reconstruction | COLMAP Reconstruction | Comparison |
 |----------------|------------------------|------------------------|---------------|
-| ![Original](Dataset/CV_Foto1.jpg) | ![Our SfM](Results/Results) | ![COLMAP](Results/ResultsColmap.png) | ![Compasion](Results/Comparison.png)
+| ![Original](Dataset/CVFoto1.jpeg) | ![Our SfM](Results/Results.png) | ![COLMAP](Results/ResultsColmap.png) | ![Compasion](Results/Comparison.png)
 
 ---
 
